@@ -36,3 +36,6 @@ alias out='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resourc
 
 # LINES OF CODE
 alias lr='find . -name "*.rb" -print | xargs wc -l | tail -n 1'
+
+# AWESOME
+alias flol='fortune | lolcat'

@@ -66,4 +66,4 @@ precmd() {
 }
 
 uptime
-fortune | cowsay | lolcat
+flol
