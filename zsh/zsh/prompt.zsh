@@ -1,6 +1,4 @@
 autoload colors && colors
-# cheers, @ehrenmurdick
-# http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
 
 anchor() {
   echo "◦"
@@ -68,4 +66,4 @@ precmd() {
 }
 
 uptime
-fortune | cowsay -f Documents/dotfiles/zsh/cowfiles/nyan.cow | lolcat
+fortune | cowsay | lolcat
