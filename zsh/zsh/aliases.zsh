@@ -4,17 +4,21 @@ alias reload!='. ~/.zshrc'
 # GIT
 alias ga="git add"
 alias gc="git commit"
-alias gph='git push'
-alias gpl='git pull --rebase'
-alias gd='git diff --compaction-heuristic'
 alias gco='git checkout'
 alias gcom='git checkout master'
-alias gs='git status -sb'
 alias gcp='git cherry-pick'
 alias gcl='git clone'
+alias gd='git diff --compaction-heuristic'
 alias gg='git grep'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 alias glc="git log --graph --color --date=relative --stat"
+alias gph='git push'
+alias gpl='git pull --rebase'
+alias gs='git status'
+alias gst='git stash'
+alias gstp='git stash pop'
+alias gstl='git stash list'
+alias gsta='git stash apply'
 
 # BUNDLER
 alias b='bundle'
