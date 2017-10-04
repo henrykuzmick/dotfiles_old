@@ -21,7 +21,7 @@ in() {
 }
 
 directory_name(){
-  echo "%{$fg_no_bold[yellow]%}%~%\/%{$reset_color%}"
+  echo "%{$fg_no_bold[cyan]%}%~%\/%{$reset_color%}"
 }
 
 git_branch(){
@@ -59,7 +59,8 @@ git_dirty() {
   fi
 }
 
-export PROMPT=$'\n$(user)$(at)$(machine)$(in)$(directory_name)$(git_branch)$(git_dirty)\n$(anchor) '
+# export PROMPT=$'\n$(user)$(at)$(machine)$(in)$(directory_name)$(git_branch)$(git_dirty)\n$(anchor) '
+export PROMPT=$'\n$(directory_name)$(git_branch)$(git_dirty)\n$(anchor) '
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
